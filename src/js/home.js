@@ -7,7 +7,7 @@ const refs = {
   divRow: document.querySelector('.container-row'),
   input: document.querySelector('[name="number"]'),
   check: document.querySelector('[name="check"]'),
-  button: document.querySelector('button'),
+  button: document.querySelector('.btn-refresh'),
 };
 
 const insertFromLocalStorageHtmlObject = () =>{
