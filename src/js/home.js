@@ -1,14 +1,7 @@
 import { db } from "./db";
+import { refs } from "./refsElements";
 import { arrayDiffByKey } from "./arrayDiffByKey";
 import { createHtmlGalleryImgs } from "./createHtmlGalleryImgs";
-
-const refs = {
-  form: document.querySelector('form'),
-  divRow: document.querySelector('.container-row'),
-  input: document.querySelector('[name="number"]'),
-  check: document.querySelector('[name="check"]'),
-  button: document.querySelector('.btn-refresh'),
-};
 
 const insertFromLocalStorageHtmlObject = () =>{
   if(!localStorage.getItem("Dogovora") || JSON.parse(localStorage.getItem("Dogovora")).length === 0) {

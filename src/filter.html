@@ -15,11 +15,59 @@
     </a>
   </div>
   <main class="container">
-    <form>
+    <div class="container-select">
+      <div class="container-select-filter">
+        <label for="name">Заказчик</label>
+          <select id="name" name="name">
+            <option value="clear">выбрать</option>
+            <option value="ТОВ Мега-поли-плюс">ТОВ Мега-поли-плюс</option>
+            <option value="Окко-драйв">Окко-драйв</option>
+            <option value="ДП БігБорд">ДП БігБорд</option>
+            <option value="Полтава-Банк">Полтава-Банк</option>
+          </select>
+      </div>
+      <div class="container-select-filter">
+        <label for="document">Документ</label>
+          <select id="document" name="document">
+            <option value="clear">выбрать</option>
+            <option value="№5630">№5630</option>
+            <option value="№5200">№5200</option>
+            <option value="№3">№3</option>
+            <option value="СФФ-0034">СФФ-0034</option>
+          </select>
+      </div>
+      <div class="container-select-filter">
+        <label for="year">Год</label>
+          <select id="year" name="year">
+            <option value="clear">выбрать</option>
+            <option value="2022">2020</option>
+            <option value="2022">2021</option>
+            <option value="2023">2022</option>
+          </select>
+      </div>
+      <div class="container-select-filter">
+        <label for="month">Месяц</label>
+          <select id="month" name="month">
+            <option value="clear">выбрать</option>
+            <option value="січень">січень</option>
+            <option value="лютий">лютий</option>
+            <option value="березень">березень</option>
+            <option value="квітень">квітень</option>
+            <option value="травень">травень</option>
+            <option value="червень">червень</option>
+            <option value="липень">липень</option>
+            <option value="серпень">серпень</option>
+            <option value="вересень">вересень</option>
+            <option value="жовтень">жовтень</option>
+            <option value="листопад">листопад</option>
+            <option value="грудень">грудень</option>
+          </select>
+      </div>
+    </div>
+
       <div class="container-row"></div>
-      <h1>Страница находится в работе!</h1>
-    </form>
   </main>
+  <script type="module" src="./js/filter.js"></script>
 </body>
 </html>
 
