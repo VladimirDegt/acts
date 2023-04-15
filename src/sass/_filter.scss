@@ -1,7 +1,11 @@
 .container-select {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   gap: 20px;
+  margin-bottom: 20px;
 }
+
 .container-select-filter {
   max-width: 200px;
   display: flex;
@@ -9,3 +13,28 @@
   text-align: center;
 }
 
+select {
+  min-width: 200px;
+  max-height: 100px;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 767px) {
+  .container-select {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (min-width: 1199px) {
+  .container-select-filter {
+    max-width: 300px;
+  }
+
+  select {
+    min-width: 300px;
+    max-height: 400px;
+    overflow: scroll;
+  }
+}

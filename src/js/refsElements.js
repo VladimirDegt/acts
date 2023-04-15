@@ -5,6 +5,8 @@ export const refs = {
   check: document.querySelector('[name="check"]'),
   button: document.querySelector('.btn-refresh'),
   select: document.querySelector('.container-select'),
-  selectName: document.querySelector('#name > option'),
-  selectDocument: document.querySelector('#document > option'),
+  selectName: document.querySelector('#name'),
+  selectDocument: document.querySelector('#document'),
+  selectYear: document.querySelector('#year'),
+  selectMonth: document.querySelector('#month'),
 };

@@ -1,8 +1,10 @@
-import { db } from "./db";
 import { refs } from "./refsElements";
+import { rendingSelectOptions } from "./rendingSelectOptions";
+import { createHtmlGalleryImgs } from "./createHtmlGalleryImgs";
+import { filterObjectsInLocalStorage } from "./filterObjectsInLocalStorage";
+import { setDefault } from "./setDefault";
 
 const arrayObjectsInLocalStorage = JSON.parse(localStorage.getItem('Dogovora'));
-console.log(arrayObjectsInLocalStorage);
 const nameInObjectInLocalStorage = [];
 const documentInObjectInLocalStorage = [];
 
@@ -14,32 +16,21 @@ arrayObjectsInLocalStorage.forEach( (obj) => {
 const setNameInObjectInLocalStorage = new Set(nameInObjectInLocalStorage);
 const setDocumentInObjectInLocalStorage = new Set(documentInObjectInLocalStorage);
 
-console.log(refs.selectName)
-console.log(refs.selectDocument)
+refs.selectName.insertAdjacentHTML('beforeend', rendingSelectOptions(setNameInObjectInLocalStorage));
+refs.selectDocument.insertAdjacentHTML('beforeend', rendingSelectOptions(setDocumentInObjectInLocalStorage));
 
 const onItemSelect = (e) => {
-  const arraySelect = [];
-  arrayObjectsInLocalStorage.forEach(obj => {
-    switch(e.target.value){
-      case obj.name:
-        arraySelect.push(obj);
-        break;
-      case obj.document:
-        arraySelect.push(obj);
-        break;
-      case obj.year:
-        arraySelect.push(obj);
-        break;
-      case obj.month:
-        arraySelect.push(obj);
-        break;
-      default:
-    }
-  });
+  if(filterObjectsInLocalStorage(e.target.value).length === 0){
+    refs.divRow.innerHTML = `Документов не найдено`;
+    return;
+  };
 
-  console.log(arraySelect)
+  setDefault(refs.selectName, e.target);
+  setDefault(refs.selectDocument, e.target);
+  setDefault(refs.selectYear, e.target);
+  setDefault(refs.selectMonth, e.target);
+
+  refs.divRow.innerHTML = createHtmlGalleryImgs(filterObjectsInLocalStorage(e.target.value));
 };
 
 refs.select.addEventListener('change', onItemSelect);
-
-
