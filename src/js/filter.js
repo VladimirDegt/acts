@@ -21,7 +21,12 @@ refs.selectDocument.insertAdjacentHTML('beforeend', rendingSelectOptions(setDocu
 
 const onItemSelect = (e) => {
   if(filterObjectsInLocalStorage(e.target.value).length === 0){
-    refs.divRow.innerHTML = `Документов не найдено`;
+    refs.divRow.innerHTML = `Документы не найдены`;
+
+    setDefault(refs.selectName, e.target);
+    setDefault(refs.selectDocument, e.target);
+    setDefault(refs.selectYear, e.target);
+    setDefault(refs.selectMonth, e.target);
     return;
   };
 
