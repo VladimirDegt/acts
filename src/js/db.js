@@ -545,6 +545,27 @@ export const db = [
   year: 2021,
   month: 'листопад',
   }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Укргазбанк',
+  document: '№47',
+  year: 2023,
+  month: 'березень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Харьковская бісквітная фабріка',
+  document: '№46',
+  year: 2023,
+  month: 'березень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Кричевский',
+  document: 'СФФ-001234',
+  year: 2023,
+  month: 'березень',
+  }, 
   
   
 ];
