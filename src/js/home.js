@@ -51,7 +51,6 @@ const onFormInput = (e) => {
 refs.form.addEventListener('input', onFormInput);
 refs.button.addEventListener('click', onButtonClick);
 
-
 fetchWeather().then(getWeather).catch(console.log);
 
 refs.weather.innerHTML = `
@@ -59,6 +58,7 @@ refs.weather.innerHTML = `
 `;
 
 function getWeather(dataWeather) {
+
   const city = dataWeather.name;
   const temp = Math.round(dataWeather.main.temp);
   const feelsLike = Math.round(dataWeather.main.feels_like);
@@ -85,3 +85,5 @@ function getWeather(dataWeather) {
 
   refs.weather.innerHTML = template;
 }
+
+
