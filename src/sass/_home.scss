@@ -114,6 +114,33 @@ input:focus {
   background-color:var(--additional-color)
 }
 
+.wrapper_weather {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container_weather {
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid #404BBF;
+  border-radius: 4px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.weather_header,
+.container_temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather_temp {
+  margin-right: 20px;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     padding-left: 15px;
@@ -131,3 +158,5 @@ input:focus {
     line-height: 1.5;
   }
 }
+
+

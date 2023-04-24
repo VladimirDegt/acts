@@ -2,6 +2,7 @@ import { db } from "./db";
 import { refs } from "./refsElements";
 import { arrayDiffByKey } from "./arrayDiffByKey";
 import { createHtmlGalleryImgs } from "./createHtmlGalleryImgs";
+import { fetchWeather } from "./fetch-weather";
 
 const onButtonClick = () => location.reload();
 
@@ -49,3 +50,40 @@ const onFormInput = (e) => {
 
 refs.form.addEventListener('input', onFormInput);
 refs.button.addEventListener('click', onButtonClick);
+
+fetchWeather().then(getWeather).catch(console.log);
+
+refs.weather.innerHTML = `
+<img src="../images/loading.gif" alt="Loading...">
+`;
+
+function getWeather(dataWeather) {
+
+  const city = dataWeather.name;
+  const temp = Math.round(dataWeather.main.temp);
+  const feelsLike = Math.round(dataWeather.main.feels_like);
+  const weatherStatus = dataWeather.weather[0].description;
+  const weatherIcon = dataWeather.weather[0].icon;
+
+  const template = `
+    <div class="container_weather">
+      <div class="weather_header">
+        <div class="weather_main">
+          <div class="weather_city">${city}</div>
+          <div class="weather_status">${weatherStatus}</div>
+        </div>
+        <div class="weather_icon">
+          <img src="http://openweathermap.org/img/w/${weatherIcon}.png" alt="${weatherStatus}">
+        </div>
+      </div>
+      <div class="container_temp">
+        <div class="weather_temp">Температура: ${temp} &degС</div>
+        <div class="weather_feels_like">Чувствуется на: ${feelsLike} &degС</div>
+      </div>
+    </div>
+  `;
+
+  refs.weather.innerHTML = template;
+}
+
+

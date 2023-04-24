@@ -9,4 +9,5 @@ export const refs = {
   selectDocument: document.querySelector('#document'),
   selectYear: document.querySelector('#year'),
   selectMonth: document.querySelector('#month'),
+  weather: document.querySelector('.wrapper_weather')
 };
