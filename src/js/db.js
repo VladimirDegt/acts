@@ -587,6 +587,48 @@ export const db = [
   year: 2022,
   month: 'лютого',
   }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Домінант-Фарма',
+  document: '№5676',
+  year: 2022,
+  month: 'січень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Домінант-Фарма',
+  document: '№5676',
+  year: 2022,
+  month: 'лютий',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Домінант-Фарма',
+  document: '№5676',
+  year: 2022,
+  month: 'березень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Домінант-Фарма',
+  document: '№5676',
+  year: 2022,
+  month: 'квітень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Домінант-Фарма',
+  document: '№5676',
+  year: 2022,
+  month: 'травень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Домінант-Фарма',
+  document: '№5676',
+  year: 2022,
+  month: 'червень',
+  }, 
   
   
 ];
