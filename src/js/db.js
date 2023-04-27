@@ -629,6 +629,13 @@ export const db = [
   year: 2022,
   month: 'червень',
   }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'Фрідом Фінанс',
+  document: '№2327',
+  year: 2019,
+  month: 'грудень',
+  }, 
   
   
 ];
