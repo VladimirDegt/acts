@@ -11,21 +11,21 @@ export function fetchWeather () {
     })
 };
 
+
+
 // динамическое получение координат
-function getGeoLocation () {
 
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      const lat = position.coords.latitude;
-      const lon = position.coords.longitude;
-      coordsLocation = {
-        lat,
-        lon
-      }
-
-    });
-  }
-};
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     const lat = position.coords.latitude;
+  //     const lon = position.coords.longitude;
+  //     coordsLocation = {
+  //       lat,
+  //       lon
+  //     }
+  //   console.log(coordsLocation);  
+  //   });
+  // }
 
 
 
