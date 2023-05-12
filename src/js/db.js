@@ -940,5 +940,32 @@ export const db = [
   year: 2023,
   month: 'квітень',
   }, 
-  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Христина',
+  document: '№48',
+  year: 2023,
+  month: 'березень',
+  },
+  { 
+  id: `${idNumber += 1}`,
+  name: 'Плигун',
+  document: '№127',
+  year: 2023,
+  month: 'березень',
+  }, 
+  { 
+  id: `${idNumber += 1}`,
+  name: 'Глуско',
+  document: '№80',
+  year: 2023,
+  month: 'березень',
+  },
+  {
+  id: `${idNumber += 1}`,
+  name: 'Институт неврологии',
+  document: '№21',
+  year: 2023,
+  month: 'квітень',
+  }, 
 ];
