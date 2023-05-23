@@ -968,4 +968,18 @@ export const db = [
   year: 2023,
   month: 'квітень',
   }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'ПУМБ',
+  document: '№160',
+  year: 2023,
+  month: 'квітень',
+  }, 
+  {
+  id: `${idNumber += 1}`,
+  name: 'ПУМБ',
+  document: '№160',
+  year: 2023,
+  month: 'квітень',
+  }, 
 ];
