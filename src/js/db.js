@@ -266,4 +266,25 @@ export const db = [
   year: 2022,
   month: 'червень',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Віал-С',
+  document: 'СФФ',
+  year: 2023,
+  month: 'травень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Таіра',
+  document: 'СФФ',
+  year: 2023,
+  month: 'травень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Крічевський',
+  document: 'СФФ',
+  year: 2023,
+  month: 'травень',
+  },  
 ];
