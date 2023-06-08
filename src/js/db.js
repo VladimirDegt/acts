@@ -301,4 +301,32 @@ export const db = [
   year: 2023,
   month: 'травень',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Макро+',
+  document: '№33',
+  year: 2023,
+  month: 'травень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Христина',
+  document: '№33',
+  year: 2023,
+  month: 'травень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Плигун',
+  document: '№33',
+  year: 2023,
+  month: 'травень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Глуско',
+  document: '№33',
+  year: 2023,
+  month: 'травень',
+  },  
 ];
