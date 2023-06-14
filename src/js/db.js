@@ -427,4 +427,25 @@ export const db = [
   year: 2023,
   month: 'травня',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'ПриватБанк',
+  document: '№85',
+  year: 2023,
+  month: 'травня',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Юджи',
+  document: 'СФФ-001244',
+  year: 2023,
+  month: 'квітень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Cac',
+  document: 'СФФ-001245',
+  year: 2023,
+  month: 'квітень',
+  },  
 ];
