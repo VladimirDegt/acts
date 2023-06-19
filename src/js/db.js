@@ -455,4 +455,25 @@ export const db = [
   year: 2023,
   month: 'травень',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Райффайзенг Банк',
+  document: '№4858',
+  year: 2021,
+  month: 'грудень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Райффайзенг Банк',
+  document: '№4859',
+  year: 2021,
+  month: 'грудень',
+  },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Райффайзенг Банк',
+  document: '№4860',
+  year: 2021,
+  month: 'грудень',
+  },  
 ];
