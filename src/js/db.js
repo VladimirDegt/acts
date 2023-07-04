@@ -588,4 +588,11 @@ export const db = [
   year: 2023,
   month: 'червень',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'ПриватБанк',
+  document: '№85',
+  year: 2023,
+  month: 'червень',
+  },  
 ];
