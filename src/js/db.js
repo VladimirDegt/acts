@@ -595,4 +595,11 @@ export const db = [
   year: 2023,
   month: 'червень',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Виал-С',
+  document: 'СФФ-00004348',
+  year: 2023,
+  month: 'червень',
+  },  
 ];
