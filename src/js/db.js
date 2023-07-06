@@ -602,4 +602,11 @@ export const db = [
   year: 2023,
   month: 'червень',
   },  
+  {
+  id: `${idNumber += 1}`,
+  name: 'Институт неврологии',
+  document: '№21',
+  year: 2023,
+  month: 'червень',
+  },  
 ];
